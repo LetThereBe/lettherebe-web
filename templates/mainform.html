@@ -1,0 +1,17 @@
+
+{% block body %}
+  <h1>Let there Be</h1>
+  {% if error %}<p class="error"><strong>Error:</strong> {{ error }}{% endif %}
+
+      <a href="{{ content['response'].json()['html_url'] }}"><img src="{{ content['response'].json()['avatar_url'] }}"></a>
+      <h2> Hi {{ content['response'].json()['login'] }} </h2>
+      <!-- <form action="url_for('login') " method="post"> -->
+    <dl>
+      <dt>Username:
+      <dd><input type="text" name="username">
+      <dt>Password:
+      <dd><input type="password" name="password">
+      <dd><input type="submit" value="Login">
+    </dl>
+    <!-- </form> -->
+{% endblock %}
