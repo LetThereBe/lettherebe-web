@@ -1,4 +1,5 @@
 [![Documentation Status](https://readthedocs.org/projects/lettherebe-web/badge/?version=latest)](http://lettherebe-web.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://travis-ci.org/LetThereBe/lettherebe-web.svg?branch=master)](https://travis-ci.org/LetThereBe/lettherebe-web)
 
 
 # lettherebe-web
