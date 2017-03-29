@@ -5,13 +5,13 @@
 
       <a href="{{ content['response'].json()['html_url'] }}"><img src="{{ content['response'].json()['avatar_url'] }}"></a>
       <h2> Hi {{ content['response'].json()['login'] }} </h2>
-      <!-- <form action="url_for('login') " method="post"> -->
-    <dl>
-      <dt>Username:
-      <dd><input type="text" name="username">
-      <dt>Password:
-      <dd><input type="password" name="password">
-      <dd><input type="submit" value="Login">
-    </dl>
-    <!-- </form> -->
+
+<form method="POST" action="/">
+    {{ form.hidden_tag() }}
+    {{ form.org.label }} {{ form.org(size=20) }}
+    {{ form.name.label }} {{ form.name(size=20) }}
+    {{ form.language.label }} {{ form.language(size=20) }}
+
+    <input type="submit" value="Go">
+</form>
 {% endblock %}
